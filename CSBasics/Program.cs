@@ -31,6 +31,23 @@
             // 8. (cont.) assigning the return value of a method to a variable
             int additionResult = Sum(10, 5);
             Console.WriteLine(additionResult); // output 15
+
+            // -------------------- New Book Class Implementation --------------------
+            
+            // 9-13. creating a class called 'Book' with properties and methods (see Book.cs for implementation)
+            // Create a new book 
+            Book myBook = new Book("The Great Gatsby", 180);
+
+            // Print title and page
+            Console.WriteLine($"Book: {myBook.Title}");
+            Console.WriteLine($"Current Page: {myBook.CurrentPage}");
+
+            // 14. Attempting to set CurrentPage directly will result in a compile-time error because it has a private setter
+            // book.CurrentPage = 50; 
+
+            // Turn page forward by 10 pages
+            myBook.TurnPage(10);
+            Console.WriteLine($"New Current Page in '{myBook.Title}' is: {myBook.CurrentPage}");
         }
 
         // 5. method declaration
