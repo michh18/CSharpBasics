@@ -27,6 +27,10 @@
 
             // 7. (cont.) 
             Console.WriteLine(isStringLonger("Hello", 6)); // output false as length of "Hello" is less than 6
+
+            // 8. (cont.) assigning the return value of a method to a variable
+            int additionResult = Sum(10, 5);
+            Console.WriteLine(additionResult); // output 15
         }
 
         // 5. method declaration
@@ -41,10 +45,16 @@
             return num1 - num2; 
         }
 
-        // 7. methods with two input types 
+        // 7. methods with two input types
         private static bool isStringLonger(string word, int number)
         {
-            return word.Length > number;
+            return word.Length > number; // returns true if length of word is greater than number, otherwise false
+        }
+
+        // 8. sum method that takes two integers, adds them together and returns the result
+        private static int Sum(int num1, int num2)
+        {
+            return num1 + num2;
         }
     }
 }
