@@ -1,0 +1,39 @@
+﻿namespace CSBasics
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // 2. declaring a variable
+            double pi = 3.14;
+            // Console.WriteLine(pi);
+
+            // 3. declaring a boolean (true or false)
+            bool isLearningCSharp = true;
+            // Console.WriteLine(isLearningCSharp);
+
+            // 4. reassigning a variable
+            string favouriteFilm = "Spider-Man: Across the Spider-Verse";
+            // Console.WriteLine("My favourite film is: " + favouriteFilm);
+            favouriteFilm = "High School Musical"; // reassigning the variable to a new value
+            // Console.WriteLine("My new favourite film is: " + favouriteFilm);
+
+            // 5. (cont.) calling the method 
+            string firstName = "Michelle";
+            printGreeting(firstName); // calling the method and passing the firstName variable as an argument
+
+        }
+
+        // 5. method declaration
+        private static void printGreeting(string name) // used camelCase as method is private, void return type as it won't return value
+        {
+            Console.WriteLine("Hello, " + name);
+        }
+
+        // 6. 'a tale of two numbers' = method that takes 2 numbers, subtracts one from the other and prints result
+        private static int subtractNumbers(int num1, int num2)
+        {
+            return num1 - num2; 
+        }
+    }
+}
