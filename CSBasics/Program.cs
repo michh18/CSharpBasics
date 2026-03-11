@@ -18,10 +18,15 @@
             favouriteFilm = "High School Musical"; // reassigning the variable to a new value
             // Console.WriteLine("My new favourite film is: " + favouriteFilm);
 
-            // 5. (cont.) calling the method 
+            // 5. (cont.) calling the method to print Greeting for name "Michelle"
             string firstName = "Michelle";
-            printGreeting(firstName); // calling the method and passing the firstName variable as an argument
+            printGreeting(firstName); // output Hello, Michelle 
 
+            // 6. (cont.) calling method to subtract 3 from 7 
+            subtractNumbers(7, 3); // output 4 
+
+            // 7. (cont.) 
+            Console.WriteLine(isStringLonger("Hello", 6)); // output false as length of "Hello" is less than 6
         }
 
         // 5. method declaration
@@ -34,6 +39,12 @@
         private static int subtractNumbers(int num1, int num2)
         {
             return num1 - num2; 
+        }
+
+        // 7. methods with two input types 
+        private static bool isStringLonger(string word, int number)
+        {
+            return word.Length > number;
         }
     }
 }
